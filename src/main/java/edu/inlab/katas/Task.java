@@ -28,4 +28,8 @@ public class Task {
     public void setDone(Boolean done) {
         this.done = done;
     }
+
+    public void markasDone() {
+        this.done = true;
+    }
 }

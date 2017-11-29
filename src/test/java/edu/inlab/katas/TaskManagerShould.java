@@ -43,6 +43,17 @@ public class TaskManagerShould {
 
         assertEquals(tasksList.get(0).getTask(), task);
     }
+
+    @Test
+    public void MarkTaskasDone() {
+        Task t = new Task("adeu", false);
+        t.markasDone();
+        assertEquals(true, t.getDone());
+    }
+
+
+
+
     /*@Test
     public void printTasks() {
         Task task1 = new Task(1, "Tasca 1", false);
